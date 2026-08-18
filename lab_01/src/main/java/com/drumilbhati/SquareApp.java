@@ -56,9 +56,12 @@ public class SquareApp extends JFrame {
             int y = (height - squareSize) / 2;
 
             // Draw square outline (no fill) with custom stroke
-            g2d.setColor(new Color(63, 81, 181)); // Vibrant indigo color
+            g2d.setColor(Color.RED); // Vibrant indigo color
             g2d.setStroke(new BasicStroke(3.0f));
-            g2d.drawRect(x, y, squareSize, squareSize);
+            g2d.drawLine(100, 100, 100, 200);
+            g2d.drawLine(200, 200, 100, 200);
+            g2d.drawLine(100, 100, 200, 100);
+            g2d.drawLine(200, 200, 200, 100);
 
             g2d.dispose();
         }
